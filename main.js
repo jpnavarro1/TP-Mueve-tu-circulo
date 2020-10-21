@@ -10,7 +10,7 @@ window.onload = function() {
 
     let yPos = circle.offsetTop
     let xPos = circle.offsetLeft
-    let movSpeed = 5
+    let movSpeed = 20
 
     function moveUp() {
         if(yPos === 0) {return} // Establece limite superior
@@ -66,9 +66,9 @@ window.onload = function() {
         circle.style.backgroundColor = 'blue'
     }
 
-    upArrow.addEventListener('click', moveUp)
-    downArrow.addEventListener('click', moveDown)
-    leftArrow.addEventListener('click', moveLeft)
-    rightArrow.addEventListener('click', moveRight)
+    upArrow.onclick = moveUp
+    downArrow.onclick = moveDown
+    leftArrow.onclick = moveLeft
+    rightArrow.onclick = moveRight
     document.addEventListener('keydown', whichKey)
 }
