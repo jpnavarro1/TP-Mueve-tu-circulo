@@ -13,7 +13,6 @@ window.onload = function() {
     let movSpeed = 20
 
     function moveUp() {
-        if(yPos === 0) {return} // Establece limite superior
         yPos -= movSpeed
         circle.style.top = yPos + 'px'
     }
