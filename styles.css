@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    /*z-index: -1;*/
+/* define que elemento queda arriba cuando 2 se superponen */
+}
+
+.controls {
+    display: flex;
+    background-color: black;
+    height: 65px;
+    width: 100px;
+    position: fixed;
+    right: 24px;
+    top: 24px;
+    z-index: 1;
+}
+
+.arrow {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 15%;
+}
+
+.up {
+    background-color: green;
+    right: 35px;
+}
+
+.left {
+    background-color: blue;
+    bottom: 0px;
+}
+
+.down {
+    background-color: orange;
+    bottom: 0px;
+    right: 35px;
+}
+
+.right {
+    background-color: red;
+    bottom: 0px;
+    right: 0px;
+}
+
+.colorOptions {
+    display: flex;
+    background-color: black;
+    height: 50px;
+    width: 105px;
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorBtn {
+    height: 30px;
+    width: 30px;
+    margin: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
